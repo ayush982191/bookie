@@ -1,0 +1,24 @@
+@import "../configs/variables.scss";
+@import "../utility/utility.scss";
+
+.nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 28px;
+    padding: 0px 30px;
+    p {
+        &.active {
+            @extend .text-blue;
+        }
+        &:not(.active) {
+            @extend .text-blue-50;
+            &:hover {
+                @extend .text-blue-100;
+            }
+        }
+    }
+
+    // animation
+    transition: all 0.3s;
+}

@@ -1,0 +1,28 @@
+@import "./configs/variables.scss";
+@import "./utility/utility.scss";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    @extend .bg-whiteSmoke;
+}
+
+// root container
+.app-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.app-content {
+    @extend .bg-white;
+    border: 1px solid $Blue100;
+    margin: 20px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px $Blue50;
+    min-height: 200px;
+}
+
+// loader
+.loader {
+    width: 20px;
+}
